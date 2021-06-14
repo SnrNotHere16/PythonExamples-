@@ -19,12 +19,13 @@ def printMat(mat):
     print ("\r", mat[0], " " , mat[1], "\n", mat[2], " ", mat[3])
 def det(mat):
     return (mat[0]*mat[3])-(mat[1]*mat[2])
-choice = input("Choose A for user inputted matrix.\nChoose B for randomized matrix.\n")
-if choice == 'A': 
-    mat = inputMat()
-elif choice == 'B':
-    mat = randMat()
-else: 
-    mat = [0,0,0,0]
-printMat(mat)
-print("Det = ", det(mat))
+while True:    
+    choice = input("Choose A for user inputted matrix.\nChoose B for randomized matrix.\n")
+    if choice == 'A': 
+        mat = inputMat()
+    elif choice == 'B':
+         mat = randMat()
+    else: 
+         mat = [0,0,0,0]
+    printMat(mat)
+    print("Det = ", det(mat))
