@@ -17,4 +17,4 @@ print("B = \n", test_mat2)
 print("Det(B) = ", test_mat2.det())
 print("A+B = \n", test_mat+test_mat2) 
 print("A-B = \n", test_mat-test_mat2)
-
+print("A*B = \n", test_mat*test_mat2) 
