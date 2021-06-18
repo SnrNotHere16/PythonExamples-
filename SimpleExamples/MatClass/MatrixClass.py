@@ -30,6 +30,13 @@ class Matrix(object):
         E10 = (self.E10*other.E00)+(self.E11*other.E10)
         E11 = (self.E10*other.E01)+(self.E11*other.E11)
         return Matrix(E00, E01, E10, E11) 
+    #The method for multiplying the matrix by a scalar c 
+    def scalarMul(self, c): 
+        E00 = c*self.E00
+        E01 = c*self.E01 
+        E10 = c*self.E10 
+        E11 = c*self.E11 
+        return Matrix(E00, E01, E10, E11) 
     #The method for calculating the determinant of the function
     def det(self):
         return (self.E00*self.E11)-(self.E01*self.E10)
