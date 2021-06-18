@@ -16,8 +16,10 @@ test_mat2 = Matrix(1,1,1,1)
 #Print out the matrices and determinants 
 print("A = \n",test_mat) 
 print("Det(A) = ", test_mat.det())
+print("5*A = ", test_mat.scalarMul(6))
 print("B = \n", test_mat2) 
 print("Det(B) = ", test_mat2.det())
+print("2*B = ", test_mat2.scalarMul(2)) 
 #Print out the sum of A and B 
 print("A+B = \n", test_mat+test_mat2) 
 #Print out the difference of A and B 
