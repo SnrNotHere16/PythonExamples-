@@ -32,7 +32,7 @@ class Matrix(object):
         E02 = self.E02-other.E02 
         E10 = self.E10-other.E10
         E11 = self.E11-other.E11
-        E12 = self.E1-other.E12
+        E12 = self.E12-other.E12
         E20 = self.E20-other.E20 
         E21 = self.E21-other.E21
         E22 = self.E22-other.E22
@@ -59,4 +59,4 @@ class Matrix(object):
         return Matrix(E00, E01, E02,  E10, E11, E12, E20, E21, E22) 
     #The method for calculating the determinant of the functioin
     def det(self):
-        return (self.E00*self.E11)-(self.E01*self.E10)
+        return (self.E00*((self.E11*self.E22)-(self.E12*self.E21)))-(self.E01*((self.E10*self.E22)-(self.E12*self.E20)))+(self.E02*((self.E10*self.E21)-(self.E11*self.E20)))
