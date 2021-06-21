@@ -12,7 +12,7 @@ class Matrix(object):
         self.E22 = E22 
     #The operator overload for string the matrix 
     def __str__(self):
-        return "\n {0} {1}\n {2} {3}\n".format(self.E00,self.E01,self.E12,  self.E10, self.E11, self.E20, self.E21, self.E22)
+        return "\n {0} {1} {2}\n {3} {4} {5} \n {6} {7} {8}\n".format(self.E00,self.E01,self.E02,  self.E10, self.E11,self.E12, self.E20, self.E21, self.E22)
     #The operator overload for addtion 
     def __add__(self,other): 
         E00 = self.E00+other.E00 
@@ -52,6 +52,7 @@ class Matrix(object):
         E10 = c*self.E10 
         E20 = c*self.E20 
         E11 = c*self.E11 
+        E12 = c*self.E12
         E20 = c*self.E20
         E21 = c*self.E21 
         E22 = c*self.E22 
