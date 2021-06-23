@@ -5,7 +5,7 @@ mat = [0, 1, 2, 4 ,5 , 6, 7, 8]
 #test_mat = Matrix(mat[0], mat[1], mat[2], mat[3], mat[4], mat[5] , mat[6], mat[7], mat[8])
 
 test_mat = Matrix(0,1,2,3,4,5,6,7,8)
-test_mat2 = Matrix(1,1,1,1,1,1,1,1,1)
+test_mat2 = Matrix(2,3,1,1,6,1,9,1,1)
 #Print out the matrices and determinants
 print("A = \n",test_mat)
 print("Det(A) = ", test_mat.det())

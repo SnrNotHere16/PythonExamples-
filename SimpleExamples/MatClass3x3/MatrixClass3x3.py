@@ -45,7 +45,7 @@ class Matrix(object):
         E10 = (self.E10*other.E00)+(self.E11*other.E10)+(self.E12*other.E20)
         E11 = (self.E10*other.E01)+(self.E11*other.E11)+(self.E12*other.E21)
         E12 = (self.E10*other.E02)+(self.E11*other.E12)+(self.E12*other.E22)
-        E20 = (self.E20*other.E00)+(self.E21*other.E20)+(self.E22*other.E20)
+        E20 = (self.E20*other.E00)+(self.E21*other.E10)+(self.E22*other.E20)
         E21 = (self.E20*other.E01)+(self.E21*other.E11)+(self.E22*other.E21)
         E22 = (self.E20*other.E02)+(self.E21*other.E12)+(self.E22*other.E22)
         return Matrix(E00, E01,E02, E10, E11, E12, E20, E21, E22) 
