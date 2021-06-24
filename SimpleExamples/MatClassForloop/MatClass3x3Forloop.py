@@ -4,19 +4,19 @@ class Matrix(object):
     #The constructor of the Matrix 
     def __init__(self, matrix):
        self.mat = matrix
+       if math.sqrt(len(self.mat))-math.floor(math.sqrt(len(self.mat))) != 0:
+           for x in range (pow(math.ceil(math.sqrt(len(self.mat))),2)-len(self.mat)): 
+               self.mat.append(0) 
     def __str__(self):
         matStr = "\n"        
         root = math.sqrt(len(self.mat))
-        for x in range( pow(math.ceil(root),2)):
-             if x%math.ceil(root)==0:
-                 matStr += "\n"
-             else :
-                 matStr += " "
-
-             if x < len(self.mat):
-                matStr +=  str(self.mat[x])
-             else : 
-                 matStr += str(0) 
+        for x in range(len(self.mat)): 
+            if x%root==0: 
+                matStr+='\n' 
+                matStr+=str(self.mat[x])
+            else: 
+                 matStr+=" " 
+                 matStr+=str(self.mat[x])
         return matStr
     def __add__(self,other): 
         matSum = []
