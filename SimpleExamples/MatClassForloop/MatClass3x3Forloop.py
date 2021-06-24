@@ -5,4 +5,16 @@ class Matrix(object):
     def __init__(self, matrix):
        self.mat = matrix
     def __str__(self):
-       return"\n {0} \n".format(math.sqrt(len(self.mat)))
+        matStr = "\n"        
+        root = math.sqrt(len(self.mat))
+        for x in range( pow(math.ceil(root),2)):
+             if x%math.ceil(root)==0:
+                 matStr += "\n"
+             else :
+                 matStr += " "
+
+             if x < len(self.mat):
+                matStr +=  str(self.mat[x])
+             else : 
+                 matStr += str(0) 
+        return matStr
