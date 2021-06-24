@@ -21,5 +21,10 @@ class Matrix(object):
     def __add__(self,other): 
         matSum = []
         for x in range(len(self.mat)): 
-             self.mat[x]+=other.mat[x]
-        return Matrix(self.mat)
+            matSum.append(self.mat[x]+other.mat[x])
+        return Matrix(matSum)
+    def __sub__(self,other): 
+        matDif = []
+        for x in range(len(self.mat)): 
+           matDif.append( self.mat[x]-other.mat[x])
+        return Matrix(matDif)

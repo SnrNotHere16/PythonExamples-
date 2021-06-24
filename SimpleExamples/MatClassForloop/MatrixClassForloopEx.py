@@ -7,6 +7,11 @@ print(test_mat)
 mat2 = [2,1,2] 
 test_mat2 = Matrix(mat2)
 print(test_mat2)
-mat3= [0,0,0,0,0,0,0,0,0]
+mat3= [1,2,3,4,5,6,7,8,9]
 test_mat3 =Matrix( mat3)
+print(test_mat3)
+print("\nA+C =")
 print(test_mat3+test_mat)
+print("\n A-C = ")
+print(test_mat-test_mat3)
+print(test_mat)
