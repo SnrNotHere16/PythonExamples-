@@ -15,3 +15,5 @@ print(test_mat3+test_mat)
 print("\n A-C = ")
 print(test_mat-test_mat3)
 print(test_mat)
+print(test_mat.scalarMul(5))
+
