@@ -18,3 +18,8 @@ class Matrix(object):
              else : 
                  matStr += str(0) 
         return matStr
+    def __add__(self,other): 
+        matSum = []
+        for x in range(len(self.mat)): 
+             self.mat[x]+=other.mat[x]
+        return Matrix(self.mat)
