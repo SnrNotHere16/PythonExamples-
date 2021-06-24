@@ -28,3 +28,8 @@ class Matrix(object):
         for x in range(len(self.mat)): 
            matDif.append( self.mat[x]-other.mat[x])
         return Matrix(matDif)
+    def scalarMul(self,c): 
+        matScal = [] 
+        for x in range(len(self.mat)): 
+            matScal.append(c*self.mat[x])
+        return Matrix(matScal)
