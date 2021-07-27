@@ -1,4 +1,4 @@
-#The following python file consists of class definition of a 2x2 matrix
+# The following python file consists of class definition of a 2x2 matrix
 class Matrix(object):
     #The constructor of the Matrix 
     def __init__(self, E00, E01, E10, E11):
