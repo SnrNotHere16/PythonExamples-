@@ -1,5 +1,5 @@
-#The functions for calcuating the determinant of a 2x2 matrix
-#Takes the user input a 2X2 matrix 
+# The functions for calcuating the determinant of a 2x2 matrix
+# Takes the user input a 2X2 matrix 
 def inputMat(): 
   mat = []
   mat = [0,0,0,0]
