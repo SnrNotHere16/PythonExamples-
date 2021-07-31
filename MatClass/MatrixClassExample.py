@@ -1,5 +1,5 @@
-#The following file tests the matrix class. 
-#Import the Matrix class from MatrixClass.py
+# The following file tests the matrix class. 
+# Import the Matrix class from MatrixClass.py
 from MatrixClass import Matrix
 def inputMat():
     mat = []
